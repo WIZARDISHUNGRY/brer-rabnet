@@ -5,7 +5,7 @@
 # This runs as root on the server
 
 # Let use use relative paths from this script even when run from interactive shell; workaround for $SSH_AUTH_SOCK
-cd `dirname $0` || exit 2;
+cd "$(dirname "$0")" || exit 2;
 
 # true on ubuntu 12.4
 chef_binary=/usr/local/bin/chef-solo
