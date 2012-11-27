@@ -1,0 +1,3 @@
+[submodule "cookbooks/network_interfaces"]
+	path = cookbooks/network_interfaces
+	url = git://github.com/Youscribe/network_interfaces-cookbook.git

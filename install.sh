@@ -22,4 +22,4 @@ if ! test -f "$chef_binary"; then
     gem1.9.1 install --no-rdoc --no-ri chef --version 0.10.4
 fi &&
 
-exec "$chef_binary" -c ./solo.rb -j machines/${1}.json
+exec "$chef_binary" -c ./solo.rb -j manifest.json
