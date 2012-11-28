@@ -1,0 +1,12 @@
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+# for static ip
+iface br0 inet static
+bridge_ports eth0 wlan0
+# adapt with your network settings
+address 192.168.1.250
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
