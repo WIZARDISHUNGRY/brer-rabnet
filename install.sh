@@ -16,7 +16,6 @@ if ! test -f "$binary"; then
     apt-get update &&
     apt-get -o Dpkg::Options::="--force-confnew" \
         --force-yes -fuy dist-upgrade &&
-    # Install Ruby and Chef
-    apt-get install -y wireless-tools hostapd bridge-utils
-fi &&
 
+    apt-get install -y wireless-tools hostapd bridge-utils
+fi
