@@ -25,7 +25,7 @@ function append {
   cat "$1" "$2" 2> /dev/null | tee "$TEMP"
   echo -ne "\033[32m"
   cp -vb "$TEMP" "$1"
-  echo -e  "\033[0m"
+  echo -en  "\033[0m"
   rm $TEMP
 }
 
