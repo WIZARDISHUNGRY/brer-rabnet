@@ -59,4 +59,4 @@ fi
 
 inform "Writing out configuration files..."
 test_append $INTERFACES templates/`basename $INTERFACES` $INTERFACE ; pause
-test_append $HOSTAPD templates/`basename $HOSTAPD` $INTERFACE ; pause
+#test_append $HOSTAPD templates/`basename $HOSTAPD` $INTERFACE ; pause
